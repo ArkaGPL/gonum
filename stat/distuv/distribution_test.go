@@ -8,10 +8,10 @@ import (
 	"math"
 	"testing"
 
-	"gonum.org/v1/gonum/floats"
-	"gonum.org/v1/gonum/floats/scalar"
-	"gonum.org/v1/gonum/integrate/quad"
-	"gonum.org/v1/gonum/stat"
+	"github.com/ArkaGPL/gonum/floats"
+	"github.com/ArkaGPL/gonum/floats/scalar"
+	"github.com/ArkaGPL/gonum/integrate/quad"
+	"github.com/ArkaGPL/gonum/stat"
 )
 
 type meaner interface {

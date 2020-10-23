@@ -10,8 +10,8 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/blas"
-	"gonum.org/v1/gonum/lapack"
+	"github.com/ArkaGPL/gonum/blas"
+	"github.com/ArkaGPL/gonum/lapack"
 )
 
 type Dlansyer interface {

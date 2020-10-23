@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/blas"
-	"gonum.org/v1/gonum/floats/scalar"
+	"github.com/ArkaGPL/gonum/blas"
+	"github.com/ArkaGPL/gonum/floats/scalar"
 )
 
 // throwPanic will throw unexpected panics if true, or will just report them as errors if false

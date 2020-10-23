@@ -5,8 +5,8 @@
 package sampleuv_test
 
 import (
-	"gonum.org/v1/gonum/stat/distuv"
-	"gonum.org/v1/gonum/stat/sampleuv"
+	"github.com/ArkaGPL/gonum/stat/distuv"
+	"github.com/ArkaGPL/gonum/stat/sampleuv"
 )
 
 func ExampleMetropolisHastings_samplingRate() {

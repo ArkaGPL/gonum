@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"gonum.org/v1/gonum/floats/scalar"
-	. "gonum.org/v1/gonum/internal/asm/f64"
+	"github.com/ArkaGPL/gonum/floats/scalar"
+	. "github.com/ArkaGPL/gonum/internal/asm/f64"
 )
 
 var axpyTests = []struct {

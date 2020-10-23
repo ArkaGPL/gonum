@@ -11,9 +11,9 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/floats"
-	"gonum.org/v1/gonum/mat"
-	"gonum.org/v1/gonum/optimize/functions"
+	"github.com/ArkaGPL/gonum/floats"
+	"github.com/ArkaGPL/gonum/mat"
+	"github.com/ArkaGPL/gonum/optimize/functions"
 )
 
 type functionThresholdConverger struct {

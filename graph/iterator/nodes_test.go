@@ -9,10 +9,10 @@ import (
 	"sort"
 	"testing"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/internal/ordered"
-	"gonum.org/v1/gonum/graph/iterator"
-	"gonum.org/v1/gonum/graph/simple"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/internal/ordered"
+	"github.com/ArkaGPL/gonum/graph/iterator"
+	"github.com/ArkaGPL/gonum/graph/simple"
 )
 
 var orderedNodesTests = []struct {

@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"log"
 
-	"gonum.org/v1/gonum/mat"
-	"gonum.org/v1/gonum/optimize/convex/lp"
+	"github.com/ArkaGPL/gonum/mat"
+	"github.com/ArkaGPL/gonum/optimize/convex/lp"
 )
 
 func ExampleSimplex() {

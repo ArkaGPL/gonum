@@ -7,8 +7,8 @@ package mat
 import (
 	"sync"
 
-	"gonum.org/v1/gonum/blas"
-	"gonum.org/v1/gonum/blas/blas64"
+	"github.com/ArkaGPL/gonum/blas"
+	"github.com/ArkaGPL/gonum/blas/blas64"
 )
 
 var tab64 = [64]byte{

@@ -7,9 +7,9 @@ package multi
 import (
 	"fmt"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/internal/uid"
-	"gonum.org/v1/gonum/graph/iterator"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/internal/uid"
+	"github.com/ArkaGPL/gonum/graph/iterator"
 )
 
 var (

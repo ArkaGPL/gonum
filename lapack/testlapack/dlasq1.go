@@ -12,7 +12,7 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/floats"
+	"github.com/ArkaGPL/gonum/floats"
 )
 
 type Dlasq1er interface {

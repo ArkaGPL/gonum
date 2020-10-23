@@ -7,8 +7,8 @@ package spatial_test
 import (
 	"fmt"
 
-	"gonum.org/v1/gonum/mat"
-	"gonum.org/v1/gonum/stat/spatial"
+	"github.com/ArkaGPL/gonum/mat"
+	"github.com/ArkaGPL/gonum/stat/spatial"
 )
 
 func ExampleGlobalMoransI_linear() {

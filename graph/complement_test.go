@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/graphs/gen"
-	"gonum.org/v1/gonum/graph/iterator"
-	"gonum.org/v1/gonum/graph/simple"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/graphs/gen"
+	"github.com/ArkaGPL/gonum/graph/iterator"
+	"github.com/ArkaGPL/gonum/graph/simple"
 )
 
 var complementTests = []struct {

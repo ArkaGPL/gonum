@@ -10,9 +10,9 @@ import (
 	"log"
 	"strings"
 
-	"gonum.org/v1/gonum/cmplxs"
-	"gonum.org/v1/gonum/cmplxs/cscalar"
-	"gonum.org/v1/gonum/floats"
+	"github.com/ArkaGPL/gonum/cmplxs"
+	"github.com/ArkaGPL/gonum/cmplxs/cscalar"
+	"github.com/ArkaGPL/gonum/floats"
 )
 
 func ExampleParseWithNA() {

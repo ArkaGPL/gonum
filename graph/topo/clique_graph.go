@@ -7,9 +7,9 @@ package topo
 import (
 	"sort"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/internal/ordered"
-	"gonum.org/v1/gonum/graph/internal/set"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/internal/ordered"
+	"github.com/ArkaGPL/gonum/graph/internal/set"
 )
 
 // Builder is a pure topological graph construction type.

@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/mathext"
-	"gonum.org/v1/gonum/stat/combin"
+	"github.com/ArkaGPL/gonum/mathext"
+	"github.com/ArkaGPL/gonum/stat/combin"
 )
 
 // Binomial implements the binomial distribution, a discrete probability distribution

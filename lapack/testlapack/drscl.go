@@ -8,7 +8,7 @@ import (
 	"math"
 	"testing"
 
-	"gonum.org/v1/gonum/floats"
+	"github.com/ArkaGPL/gonum/floats"
 )
 
 type Drscler interface {

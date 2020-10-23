@@ -7,8 +7,8 @@ package testlapack
 import (
 	"testing"
 
-	"gonum.org/v1/gonum/floats"
-	"gonum.org/v1/gonum/lapack"
+	"github.com/ArkaGPL/gonum/floats"
+	"github.com/ArkaGPL/gonum/lapack"
 )
 
 type Dlasrter interface {

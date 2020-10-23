@@ -5,9 +5,9 @@
 package mat
 
 import (
-	"gonum.org/v1/gonum/blas"
-	"gonum.org/v1/gonum/blas/blas64"
-	"gonum.org/v1/gonum/lapack/lapack64"
+	"github.com/ArkaGPL/gonum/blas"
+	"github.com/ArkaGPL/gonum/blas/blas64"
+	"github.com/ArkaGPL/gonum/lapack/lapack64"
 )
 
 // Solve solves the linear least squares problem

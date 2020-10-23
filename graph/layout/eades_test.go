@@ -10,9 +10,9 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/simple"
-	"gonum.org/v1/gonum/spatial/r2"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/simple"
+	"github.com/ArkaGPL/gonum/spatial/r2"
 	"gonum.org/v1/plot"
 	"gonum.org/v1/plot/vg"
 )

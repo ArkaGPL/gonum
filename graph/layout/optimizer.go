@@ -5,8 +5,8 @@
 package layout
 
 import (
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/spatial/r2"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/spatial/r2"
 )
 
 // LayoutR2 implements graph layout updates and representations.

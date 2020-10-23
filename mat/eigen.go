@@ -5,8 +5,8 @@
 package mat
 
 import (
-	"gonum.org/v1/gonum/lapack"
-	"gonum.org/v1/gonum/lapack/lapack64"
+	"github.com/ArkaGPL/gonum/lapack"
+	"github.com/ArkaGPL/gonum/lapack/lapack64"
 )
 
 const (

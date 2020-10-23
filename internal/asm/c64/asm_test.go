@@ -9,10 +9,10 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/cmplxs/cscalar"
-	"gonum.org/v1/gonum/floats/scalar"
-	"gonum.org/v1/gonum/internal/cmplx64"
-	"gonum.org/v1/gonum/internal/math32"
+	"github.com/ArkaGPL/gonum/cmplxs/cscalar"
+	"github.com/ArkaGPL/gonum/floats/scalar"
+	"github.com/ArkaGPL/gonum/internal/cmplx64"
+	"github.com/ArkaGPL/gonum/internal/math32"
 )
 
 const (

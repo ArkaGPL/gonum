@@ -6,7 +6,7 @@
 
 package floats
 
-import "gonum.org/v1/gonum/floats/scalar"
+import "github.com/ArkaGPL/gonum/floats/scalar"
 
 var (
 	// Deprecated: Use scalar.EqualWithinAbs.

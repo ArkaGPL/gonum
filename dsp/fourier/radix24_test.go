@@ -13,7 +13,7 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/cmplxs"
+	"github.com/ArkaGPL/gonum/cmplxs"
 )
 
 func TestCoefficients(t *testing.T) {

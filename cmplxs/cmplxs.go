@@ -9,8 +9,8 @@ import (
 	"math"
 	"math/cmplx"
 
-	"gonum.org/v1/gonum/cmplxs/cscalar"
-	"gonum.org/v1/gonum/internal/asm/c128"
+	"github.com/ArkaGPL/gonum/cmplxs/cscalar"
+	"github.com/ArkaGPL/gonum/internal/asm/c128"
 )
 
 const (

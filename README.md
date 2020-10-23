@@ -1,11 +1,11 @@
-# Gonum [![Build Status](https://www.travis-ci.org/gonum/gonum.svg?branch=master)](https://www.travis-ci.org/gonum/gonum/branches) [![Build status](https://ci.appveyor.com/api/projects/status/valslkp8sr50eepn/branch/master?svg=true)](https://ci.appveyor.com/project/Gonum/gonum/branch/master) [![codecov.io](https://codecov.io/gh/gonum/gonum/branch/master/graph/badge.svg)](https://codecov.io/gh/gonum/gonum) [![coveralls.io](https://coveralls.io/repos/gonum/gonum/badge.svg?branch=master&service=github)](https://coveralls.io/github/gonum/gonum?branch=master) [![GoDoc](https://godoc.org/gonum.org/v1/gonum?status.svg)](https://godoc.org/gonum.org/v1/gonum) [![Go Report Card](https://goreportcard.com/badge/github.com/gonum/gonum)](https://goreportcard.com/report/github.com/gonum/gonum) [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/emersion/stability-badges#unstable)
+# Gonum [![Build Status](https://www.travis-ci.org/gonum/gonum.svg?branch=master)](https://www.travis-ci.org/gonum/gonum/branches) [![Build status](https://ci.appveyor.com/api/projects/status/valslkp8sr50eepn/branch/master?svg=true)](https://ci.appveyor.com/project/Gonum/gonum/branch/master) [![codecov.io](https://codecov.io/gh/gonum/gonum/branch/master/graph/badge.svg)](https://codecov.io/gh/gonum/gonum) [![coveralls.io](https://coveralls.io/repos/gonum/gonum/badge.svg?branch=master&service=github)](https://coveralls.io/github/gonum/gonum?branch=master) [![GoDoc](https://godoc.org/github.com/ArkaGPL/gonum?status.svg)](https://godoc.org/github.com/ArkaGPL/gonum) [![Go Report Card](https://goreportcard.com/badge/github.com/gonum/gonum)](https://goreportcard.com/report/github.com/gonum/gonum) [![stability-unstable](https://img.shields.io/badge/stability-unstable-yellow.svg)](https://github.com/emersion/stability-badges#unstable)
 
 ## Installation
 
 The core packages of the Gonum suite are written in pure Go with some assembly.
 Installation is done using `go get`.
 ```
-go get -u gonum.org/v1/gonum/...
+go get -u github.com/ArkaGPL/gonum/...
 ```
 
 ## Supported Go versions
@@ -32,9 +32,9 @@ The current list of non-internal tags is as follows:
 
 - safe — do not use assembly or unsafe
 - bounds — use bounds checks even in internal calls
-- cblas — use CGO gonum.org/v1/netlib/blas/netlib BLAS implementation in tests (only in [mat package](https://godoc.org/gonum.org/v1/gonum/mat))
+- cblas — use CGO gonum.org/v1/netlib/blas/netlib BLAS implementation in tests (only in [mat package](https://godoc.org/github.com/ArkaGPL/gonum/mat))
 - noasm — do not use assembly implementations
-- tomita — use [Tomita, Tanaka, Takahashi pivot choice](https://doi.org/10.1016%2Fj.tcs.2006.06.015) for maximimal clique calculation, otherwise use random pivot (only in [topo package](https://godoc.org/gonum.org/v1/gonum/graph/topo))
+- tomita — use [Tomita, Tanaka, Takahashi pivot choice](https://doi.org/10.1016%2Fj.tcs.2006.06.015) for maximimal clique calculation, otherwise use random pivot (only in [topo package](https://godoc.org/github.com/ArkaGPL/gonum/graph/topo))
 
 
 ## Issues [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/gonum/gonum)](https://www.tickgit.com/browse?repo=github.com/gonum/gonum)

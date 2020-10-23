@@ -5,8 +5,8 @@
 package gonum
 
 import (
-	"gonum.org/v1/gonum/blas/blas64"
-	"gonum.org/v1/gonum/lapack"
+	"github.com/ArkaGPL/gonum/blas/blas64"
+	"github.com/ArkaGPL/gonum/lapack"
 )
 
 // Dgebak updates an n×m matrix V as

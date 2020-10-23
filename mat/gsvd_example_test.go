@@ -9,7 +9,7 @@ import (
 	"log"
 	"math"
 
-	"gonum.org/v1/gonum/mat"
+	"github.com/ArkaGPL/gonum/mat"
 )
 
 func ExampleGSVD() {

@@ -9,10 +9,10 @@ import (
 	"reflect"
 	"testing"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/path/internal/testgraphs"
-	"gonum.org/v1/gonum/graph/simple"
-	"gonum.org/v1/gonum/graph/topo"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/path/internal/testgraphs"
+	"github.com/ArkaGPL/gonum/graph/simple"
+	"github.com/ArkaGPL/gonum/graph/topo"
 )
 
 var aStarTests = []struct {

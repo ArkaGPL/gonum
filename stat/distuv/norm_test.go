@@ -11,8 +11,8 @@ import (
 
 	"golang.org/x/exp/rand"
 
-	"gonum.org/v1/gonum/floats"
-	"gonum.org/v1/gonum/floats/scalar"
+	"github.com/ArkaGPL/gonum/floats"
+	"github.com/ArkaGPL/gonum/floats/scalar"
 )
 
 // TestNormalProbs tests LogProb, Prob, CumProb, and Quantile

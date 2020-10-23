@@ -9,8 +9,8 @@ import (
 	"math"
 	"testing"
 
-	"gonum.org/v1/gonum/blas"
-	"gonum.org/v1/gonum/floats"
+	"github.com/ArkaGPL/gonum/blas"
+	"github.com/ArkaGPL/gonum/floats"
 )
 
 type DoubleOneVectorCase struct {

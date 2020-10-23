@@ -5,9 +5,9 @@
 package mat
 
 import (
-	"gonum.org/v1/gonum/blas/blas64"
-	"gonum.org/v1/gonum/lapack"
-	"gonum.org/v1/gonum/lapack/lapack64"
+	"github.com/ArkaGPL/gonum/blas/blas64"
+	"github.com/ArkaGPL/gonum/lapack"
+	"github.com/ArkaGPL/gonum/lapack/lapack64"
 )
 
 const badRcond = "mat: invalid rcond value"
@@ -147,6 +147,11 @@ func (svd *SVD) Kind() SVDKind {
 		return -1
 	}
 	return svd.kind
+}
+
+// Set Kind
+func (svd *SVD) SetKind(kind int) {
+        svd.kind = SVDKind(kind)
 }
 
 // Rank returns the rank of A based on the count of singular values greater than

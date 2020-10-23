@@ -9,10 +9,10 @@ import (
 	"os/exec"
 	"testing"
 
-	"gonum.org/v1/gonum/graph"
-	"gonum.org/v1/gonum/graph/encoding"
-	"gonum.org/v1/gonum/graph/multi"
-	"gonum.org/v1/gonum/graph/simple"
+	"github.com/ArkaGPL/gonum/graph"
+	"github.com/ArkaGPL/gonum/graph/encoding"
+	"github.com/ArkaGPL/gonum/graph/multi"
+	"github.com/ArkaGPL/gonum/graph/simple"
 )
 
 // intset is an integer set.
