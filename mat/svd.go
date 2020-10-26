@@ -151,7 +151,7 @@ func (svd *SVD) Kind() SVDKind {
 
 // Set Kind
 func (svd *SVD) SetKind(kind int) {
-        svd.kind = SVDKind(kind)
+	svd.kind = SVDKind(kind)
 }
 
 // Rank returns the rank of A based on the count of singular values greater than
@@ -205,6 +205,11 @@ func (svd *SVD) Values(s []float64) []float64 {
 	return s
 }
 
+// Set s
+func (svd *SVD) SetS(s []float64) {
+	svd.s = s
+}
+
 // UTo extracts the matrix U from the singular value decomposition. The first
 // min(m,n) columns are the left singular vectors and correspond to the singular
 // values as returned from SVD.Values.
@@ -241,6 +246,11 @@ func (svd *SVD) UTo(dst *Dense) {
 	dst.Copy(tmp)
 }
 
+// Set u
+func (svd *SVD) SetU(u blas64.General) {
+	svd.u = u
+}
+
 // VTo extracts the matrix V from the singular value decomposition. The first
 // min(m,n) columns are the right singular vectors and correspond to the singular
 // values as returned from SVD.Values.
@@ -275,6 +285,11 @@ func (svd *SVD) VTo(dst *Dense) {
 		capCols: c,
 	}
 	dst.Copy(tmp.T())
+}
+
+// Set v
+func (svd *SVD) SetV(v blas64.General) {
+	svd.vt = v
 }
 
 // SolveTo calculates the minimum-norm solution to a linear least squares problem
