@@ -292,6 +292,48 @@ func (svd *SVD) SetV(v blas64.General) {
 	svd.vt = v
 }
 
+func (svd *SVD) ReduceTo(y *Dense, b Matrix, rank int) []float64 {
+	if !svd.succFact() {
+		panic(badFact)
+	}
+	if rank < 1 || len(svd.s) < rank {
+		panic("svd: rank out of range")
+	}
+	kind := svd.kind
+	if kind&SVDThinU == 0 && kind&SVDFullU == 0 {
+		panic("svd: u not computed during factorization")
+	}
+	if kind&SVDThinV == 0 && kind&SVDFullV == 0 {
+		panic("svd: v not computed during factorization")
+	}
+
+	u := Dense{
+		mat:     svd.u,
+		capRows: svd.u.Rows,
+		capCols: svd.u.Cols,
+	}
+	s := svd.s[:rank]
+
+	_, bc := b.Dims()
+	c := getWorkspace(svd.u.Cols, bc, false)
+	defer putWorkspace(c)
+	c.Mul(u.T(), b)
+
+	//y := getWorkspace(rank, bc, false)
+	//defer putWorkspace(y)
+	y.DivElem(c.slice(0, rank, 0, bc), repVector{vec: s, cols: bc})
+
+	res := make([]float64, bc)
+	if rank < svd.u.Cols {
+		c = c.slice(len(s), svd.u.Cols, 0, bc)
+		for j := range res {
+			col := c.ColView(j)
+			res[j] = Dot(col, col)
+		}
+	}
+	return res
+}
+
 // SolveTo calculates the minimum-norm solution to a linear least squares problem
 //  minimize over n-element vectors x: |b - A*x|_2 and |x|_2
 // where b is a given m-element vector, using the SVD of m×n matrix A stored in
