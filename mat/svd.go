@@ -292,6 +292,24 @@ func (svd *SVD) SetV(v blas64.General) {
 	svd.vt = v
 }
 
+// ReduceTo calculates the minimum-norm solution to a linear least squares problem
+//  minimize over n-element vectors x: |b - A*x|_2 and |x|_2
+// where b is a given m-element vector, using the SVD of m×n matrix A stored in
+// the receiver. A may be rank-deficient, that is, the given effective rank can be
+//  rank ≤ min(m,n)
+// The rank can be computed using SVD.Rank.
+//
+// Several right-hand side vectors b and solution vectors x can be handled in a
+// single call. Vectors b are stored in the columns of the m×k matrix B and the
+// resulting vectors x will be stored in the columns of y. y must be either
+// empty or have the size equal to rank×k.
+//
+// The decomposition must have been factorized computing both the U and V
+// singular vectors.
+//
+// ReduceTo returns the residuals calculated from the complete SVD. For this
+// value to be valid the factorization must have been performed with at least
+// SVDFullU.
 func (svd *SVD) ReduceTo(y *Dense, b Matrix, rank int) []float64 {
 	if !svd.succFact() {
 		panic(badFact)
@@ -318,9 +336,6 @@ func (svd *SVD) ReduceTo(y *Dense, b Matrix, rank int) []float64 {
 	c := getWorkspace(svd.u.Cols, bc, false)
 	defer putWorkspace(c)
 	c.Mul(u.T(), b)
-
-	//y := getWorkspace(rank, bc, false)
-	//defer putWorkspace(y)
 	y.DivElem(c.slice(0, rank, 0, bc), repVector{vec: s, cols: bc})
 
 	res := make([]float64, bc)
